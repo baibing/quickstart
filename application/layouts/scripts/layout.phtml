@@ -1,0 +1,102 @@
+<!-- application/layouts/scripts/layout.phtml -->
+<?php echo $this->doctype() ?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <?php echo $this->headTitle()
+  				  ->headTitle('Visit')
+				  ->headTitle('Texas A&M University')
+				  ->headTitle("College Station, Texas")
+				  ->setSeparator(" - ")
+				  ->setIndent(4); ?>
+
+  <meta charset="utf-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width; initial-scale=1.0;" name="viewport">
+  <meta content="gbLDbh-Q1KfBG2HlZvIUsuGLsaHEXnO_kW30uedj-nU" name="google-site-verification">
+
+  <meta content="[PAGE TITLE] Visitor Registration System | Texas A&amp;M University | College Station, TX"
+    name="title">
+  <meta content="Texas A&amp;M University - Marketing &amp; Communications" name="author">
+  <meta content="texas a&amp;m university, texas, a&amp;m, texas a&amp;m, aggies, texas aggies, university,
+    universities, college, colleges, higher education, college station, 12th man, visitor, registration,
+    acacademic advisor, appointment" name="keywords">
+  <meta content="[CUSTOM CONTENT]" name="description">
+
+  <meta content="[PAGE TITLE] |Visitor Registration System |Texas A&amp;M University | College Station, TX"
+    name="DC.Title">
+  <meta content="Texas A&amp;M University - Marketing &amp; Communications" name="Author">
+  <meta content="texas a&amp;m university, texas, a&amp;m, texas a&amp;m, aggies, texas aggies, university,
+      universities, college, colleges, higher education, college station, 12th man, visitor, registration, acadcemic
+      advisor, appointment" name="DC.Subject.Keyword">
+  <meta content="[CUSTOM CONTENT]" name="DC.Desciption">
+
+  <link href="/images/icons/favicon.ico" rel="shortcut icon">
+  <link href="/images/icons/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="/css/defaults.css"  rel="stylesheet">
+  <link href="/css/styles.css"  rel="stylesheet">
+
+  <script src="/javascript/jquery-1.7.1.min.js"></script>
+  <script src="/javascript/modernizr-2.0.6.min.js"></script>
+  <script src="/javascript/gextrackr.js"></script>
+
+
+</head>
+
+<body>
+
+  <a class="offPage" href="#contents">Skip to main content</a>
+
+<header>
+  <div id="headerWrapper">
+    <a id="logo" href="http://www.tamu.edu/" title="Texas A&amp;M University Home Page"></a>
+    <h1 class="headerTitle">Appelt Aggieland Visitor Center</h1>
+    <p>
+      Phone: 979.845.5851<br>
+      Email: <a href="mailto:visit@tamu.edu">visit@tamu.edu</a><br>
+      <a href="http://aggiemap.tamu.edu/?Bldg=0446">Rudder Tower 1st floor</a>
+    </p>
+  </div>
+</header>
+
+<div id="header" style="background-color: #EEEEEE; height: 30px;">
+    <div id="header-logo" style="float: left">
+        <b>ZF Quickstart Application</b>
+    </div>
+    <div id="header-navigation" style="float: right">
+        <a href="<?php echo $this->url(
+            array('controller'=>'guestbook'),
+            'default',
+            true) ?>">Guestbook</a>
+    </div>
+</div>
+
+ 
+<div id="pagewrapper">
+  <?php echo $this->layout()->content ?>
+</div>  <!-- end pagewrapper -->
+
+<footer id="footer">
+  <div id="footerwrapper">
+    <div id="universityCredits">
+      <a href="/statements/trademark.html">&#169; 2012 All rights reserved</a>
+      <br>
+      <a href="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Texas+A%26M+University&amp;sll=37.0625,-95.677068&amp;sspn=44.658568,67.5&amp;ie=UTF8&amp;z=13">
+         Texas A&amp;M University
+      <br>
+      College Station, Texas 77843</a>
+    </div>
+
+    <div id="calloutLinks">
+      <br>
+      <a href="/statements/index.html">Site Policies</a>
+      <br>
+      <a href="https://compass-ssb.tamu.edu/pls/PROD/bwxkwpro.P_ChooseProspectType">Request Information</a>
+    </div>
+  </div>  <!-- end footerwrapper -->
+</footer>
+
+
+
+</body>
+
+</html>

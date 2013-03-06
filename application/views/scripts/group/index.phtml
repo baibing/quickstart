@@ -1,0 +1,12 @@
+<!-- application/views/scripts/group/index.phtml -->
+
+Group Leader Entries: <br />
+<dl>
+    <?php foreach ($this->leaderEntries as $entry): ?>
+    <dt><?php echo $this->escape($entry->firstName) . " " . $this->escape($entry->lastName) ?></dt>
+    <dd><?php echo $this->escape($entry->email) ?></dd>
+    <?php endforeach ?>
+</dl>
+
+<?php
+echo $this -> form; 
